@@ -1,5 +1,5 @@
-import { Routes as RoutesContainer, Route, Navigate } from "react-router-dom";
-import { HomePage } from "./pages/Home";
+import { Routes as RoutesContainer, Route, Navigate } from 'react-router-dom';
+import { HomePage } from './pages/Home';
 
 export function Routes() {
   return (
