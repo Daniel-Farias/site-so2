@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 interface NavbarProps {
   open: boolean;
@@ -17,9 +17,10 @@ export const NavbarContainer = styled.nav<NavbarProps>`
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   transition: 0.5s;
+  padding: 0 30px;
 
   @media (min-width: 700px) {
     height: 70px;
@@ -43,23 +44,25 @@ export const NavbarLinkContainer = styled.div`
   display: flex;
 `;
 
-export const NavbarLinkBase = styled(Link)`
+const LinkBaseStyle = css`
   color: white;
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-weight: bold;
-  margin: 10px;
+  margin-left: 50px;
   transition: 0.5s;
 
-  &:hover,
-  &:focus {
-    color: blue;
+  &:hover {
+    color: #ff9000;
   }
+`;
 
-  &:active {
-    color: red;
-  }
+export const NavbarLinkBase = styled(Link)`
+  ${LinkBaseStyle}
+`;
+export const Anchor = styled.a`
+  ${LinkBaseStyle}
 `;
 
 export const NavbarLinkExtended = styled(NavbarLinkBase)``;

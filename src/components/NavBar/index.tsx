@@ -10,9 +10,10 @@ export function NavBar() {
       <S.NavbarContainer open={extendNavbar}>
         <S.Img src={logo} alt="UESPI" />
         <S.NavbarLinkContainer>
-          <S.NavbarLink to="/home">Home</S.NavbarLink>
-          <S.NavbarLink to="/about">About Us</S.NavbarLink>
-          <S.NavbarLink to="/contact">Contact Us</S.NavbarLink>
+          <S.NavbarLink to="/">Home</S.NavbarLink>
+          <S.NavbarLink to="/about">Memória Virtual</S.NavbarLink>
+          <S.NavbarLink to="/contact">Gerência de Memória</S.NavbarLink>
+          <S.Anchor href="#help">Ajuda</S.Anchor>
           <S.ButtonLink onClick={() => setExtendNavbar((curr) => !curr)}>
             {extendNavbar ? <>&#10005;</> : <>&#8801;</>}
           </S.ButtonLink>
@@ -22,6 +23,7 @@ export function NavBar() {
             <S.NavbarLinkExtended to="/home">Home</S.NavbarLinkExtended>
             <S.NavbarLinkExtended to="/about">About Us</S.NavbarLinkExtended>
             <S.NavbarLinkExtended to="/contact">Contact Us</S.NavbarLinkExtended>
+            <S.Anchor href="#help">Ajuda</S.Anchor>
           </S.ExtendedNavbar>
         )}
       </S.NavbarContainer>

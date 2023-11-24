@@ -3,7 +3,7 @@ import * as S from './styles';
 
 export function Footer() {
   return (
-    <S.Container>
+    <S.Container id="help">
       <S.Footer>
         <S.Widget>
           <S.AreaImage>
