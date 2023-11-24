@@ -2,7 +2,7 @@ import { useState } from 'react';
 import logo from '../../assets/images/UESPI_logo.png';
 import * as S from './styles';
 
-export function Navbar() {
+export function NavBar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
 
   return (
