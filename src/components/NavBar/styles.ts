@@ -9,6 +9,20 @@ export const Header = styled.header`
   margin-bottom: 30px;
 `;
 
+export const BackButton = styled(Link)`
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+
+  &:hover {
+    color: #ff9000;
+  }
+`;
+
 export const NavbarContainer = styled.nav<NavbarProps>`
   top: 0;
   width: 100%;

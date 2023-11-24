@@ -8,7 +8,7 @@ export function Footer() {
         <S.Widget>
           <S.AreaImage>
             <S.Img src={logo} alt="img" />
-            <S.WidgetTitle>BCC-BLOCO 06</S.WidgetTitle>
+            <S.WidgetTitle>BCC - BLOCO 06</S.WidgetTitle>
           </S.AreaImage>
           <S.Divider />
           <S.Paragraph>Sistemas Operacionais II</S.Paragraph>
@@ -38,7 +38,7 @@ export function Footer() {
       </S.Footer>
 
       <S.Copyright>
-        <S.Paragraph>BCC-BLOCO 06 © 2023. All rights reserved.</S.Paragraph>
+        <S.Paragraph>BCC - BLOCO 06 © 2023. All rights reserved.</S.Paragraph>
       </S.Copyright>
     </S.Container>
   );
