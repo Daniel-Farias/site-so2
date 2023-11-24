@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import * as S from './styles';
+import { useState } from 'react';
 import logo from '../../assets/images/UESPI_logo.png';
+import * as S from './styles';
 
-export default function Navbar() {
+export function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
 
   return (
     <S.Header>
       <S.NavbarContainer open={extendNavbar}>
-        <S.Img src={logo} alt="" />
+        <S.Img src={logo} alt="UESPI" />
         <S.NavbarLinkContainer>
           <S.NavbarLink to="/home">Home</S.NavbarLink>
           <S.NavbarLink to="/about">About Us</S.NavbarLink>

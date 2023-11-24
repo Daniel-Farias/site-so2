@@ -1,10 +1,9 @@
-import React from 'react';
-
-import * as S from './styles';
 import logo from '../../assets/images/UESPI_logo.png';
-export default function Footer() {
+import * as S from './styles';
+
+export function Footer() {
   return (
-    <div>
+    <S.Container>
       <S.Footer>
         <S.Widget>
           <S.AreaImage>
@@ -41,6 +40,6 @@ export default function Footer() {
       <S.Copyright>
         <S.Paragraph>BCC-BLOCO 06 © 2023. All rights reserved.</S.Paragraph>
       </S.Copyright>
-    </div>
+    </S.Container>
   );
 }

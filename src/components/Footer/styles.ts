@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  width: 100%;
+`;
+
 export const Footer = styled.footer`
+  position: relative;
   padding: 20px 0;
   background: #181818;
   width: 100%;
@@ -10,6 +15,7 @@ export const Footer = styled.footer`
   justify-content: space-around;
   color: white;
 `;
+
 export const Img = styled.img`
   max-width: 40px;
 `;

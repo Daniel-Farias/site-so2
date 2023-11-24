@@ -2,13 +2,13 @@ import { Routes as RoutesContainer, Route, Navigate } from 'react-router-dom';
 import { HomePage } from './pages/Home';
 import { PostPage } from './pages/Post';
 import { Post404Page } from './pages/404';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 
 export function Routes() {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <RoutesContainer>
         <Route path="/" element={<HomePage />} />
         <Route path="/post/:slug" element={<PostPage />} />

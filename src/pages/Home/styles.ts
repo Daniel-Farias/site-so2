@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Container = styled.div`
   color: #fff;
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  height: auto;
+  margin-bottom: 60px;
 `;
 
 export const Title = styled.h1`

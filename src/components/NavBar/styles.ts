@@ -8,10 +8,11 @@ interface NavbarProps {
 export const Header = styled.header`
   margin-bottom: 30px;
 `;
+
 export const NavbarContainer = styled.nav<NavbarProps>`
   top: 0;
   width: 100%;
-  height: ${(props) => (props.open ? '40vh' : '80px')};
+  height: ${(props) => (props.open ? '30vh' : '80px')};
   background-color: #39405c;
   display: flex;
   align-items: center;
@@ -32,6 +33,7 @@ export const NavbarContainer = styled.nav<NavbarProps>`
 
 export const Img = styled.img`
   max-width: 40px;
+
   @media (max-width: 700px) {
     display: none;
   }
@@ -41,7 +43,7 @@ export const NavbarLinkContainer = styled.div`
   display: flex;
 `;
 
-export const commonLinkStyles = `
+export const NavbarLinkBase = styled(Link)`
   color: white;
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -60,16 +62,12 @@ export const commonLinkStyles = `
   }
 `;
 
-export const NavbarLink = styled(Link)`
-  ${commonLinkStyles}
+export const NavbarLinkExtended = styled(NavbarLinkBase)``;
 
+export const NavbarLink = styled(NavbarLinkBase)`
   @media (max-width: 700px) {
     display: none;
   }
-`;
-
-export const NavbarLinkExtended = styled(Link)`
-  ${commonLinkStyles}
 `;
 
 export const ButtonLink = styled.button`
@@ -80,6 +78,7 @@ export const ButtonLink = styled.button`
   color: white;
   font-size: 40px;
   cursor: pointer;
+
   @media (min-width: 700px) {
     display: none;
   }
@@ -89,6 +88,7 @@ export const ExtendedNavbar = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media (min-width: 700px) {
     display: none;
   }
