@@ -61,13 +61,19 @@ const LinkBaseStyle = css`
 export const NavbarLinkBase = styled(Link)`
   ${LinkBaseStyle}
 `;
-export const Anchor = styled.a`
-  ${LinkBaseStyle}
+export const AnchorBase = styled.a`
+  ${LinkBaseStyle};
 `;
 
 export const NavbarLinkExtended = styled(NavbarLinkBase)``;
+export const AnchorLinkExtended = styled(AnchorBase)``;
 
 export const NavbarLink = styled(NavbarLinkBase)`
+  @media (max-width: 700px) {
+    display: none;
+  }
+`;
+export const Anchor = styled(AnchorBase)`
   @media (max-width: 700px) {
     display: none;
   }
