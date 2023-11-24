@@ -22,7 +22,7 @@ export function HomePage() {
 
   return (
     <S.Container>
-      <S.Title>Sistemas Operacionais ||</S.Title>
+      <S.Title>Sistemas Operacionais II</S.Title>
       <S.FilterContainer>
         <S.Filter onClick={() => setFilter('')} className={filter === '' ? 'active' : ''}>
           All

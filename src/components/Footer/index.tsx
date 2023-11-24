@@ -8,7 +8,7 @@ export function Footer() {
         <S.Widget>
           <S.AreaImage>
             <S.Img src={logo} alt="img" />
-            <S.WidgetTitle>BCC-BLOCO06</S.WidgetTitle>
+            <S.WidgetTitle>BCC-BLOCO 06</S.WidgetTitle>
           </S.AreaImage>
           <S.Divider />
           <S.Paragraph>Sistemas Operacionais II</S.Paragraph>
