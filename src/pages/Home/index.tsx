@@ -23,10 +23,6 @@ const posts = [
     title: 'What is Talentum and what is our ideology',
     categories: ['Gerência de Memória'],
   },
-  {
-    title: 'New power tools for gig economy',
-    categories: ['Memória Virtual', 'Gerência de Memória'],
-  },
 ];
 
 export function HomePage() {
@@ -46,13 +42,15 @@ export function HomePage() {
           Memória Virtual
         </S.Filter>
       </S.FilterContainer>
-      <S.PostsList>
-        {posts
-          .filter((post) => (filter ? post.categories.includes(filter) : true))
-          .map((post) => (
-            <PostCard data={post} key={post.title} />
-          ))}
-      </S.PostsList>
+      <S.PostListContainer>
+        <S.PostsList>
+          {posts
+            .filter((post) => (filter ? post.categories.includes(filter) : true))
+            .map((post) => (
+              <PostCard data={post} key={post.title} />
+            ))}
+        </S.PostsList>
+      </S.PostListContainer>
     </S.Container>
   );
 }
