@@ -1,4 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
+import { Image } from '../../../components/Image';
+import Img4 from '../../../assets/images/memoria-virtual/4.png';
 import * as S from '../styles';
 
 export function MemoriaVirtualPaginacao() {
@@ -59,6 +61,23 @@ export function MemoriaVirtualPaginacao() {
         <S.ListItem>Processos com elevada taxa de paginação podem ter seu limite de páginas reais ampliado.</S.ListItem>
         <S.ListItem>Processos com baixa taxa de paginação podem ter seu limite de páginas reais reduzido.</S.ListItem>
       </S.List>
+
+      <S.MediaContainer>
+        <Image
+          image={Img4}
+          caption="Figura 1: Memória virtual por paginação"
+          credit="https://www.slideserve.com/ovid/sistemas-operacionais"
+        />
+      </S.MediaContainer>
+
+      <S.Title>Videos:</S.Title>
+      <S.MediaContainer>
+        <S.Video src="https://www.youtube.com/embed/0QxMvORmUFc?si=4sdGXnwlsKYJub4U" title="Paginação" />
+        <S.Video
+          src="https://www.youtube.com/embed/4EaBN98dk40?si=pvOYa8-QQ0Ww_GNu"
+          title="Sistemas Operacionais - Aula 19 - Paginação"
+        />
+      </S.MediaContainer>
     </PostPage>
   );
 }

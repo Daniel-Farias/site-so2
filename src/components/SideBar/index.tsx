@@ -49,22 +49,22 @@ export function SideBar() {
             <Link to="/post/memoria-virtual-paginacao">Memória Virtual por Paginação</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Memória Virtual por Segmentação</Link>
+            <Link to="/post/memoria-virtual-segmentacao">Memória Virtual por Segmentação</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Memória Virtual por Segmentação com Paginação</Link>
+            <Link to="/post/memoria-virtual-segmentacao-com-paginacao">Memória Virtual por Segmentação com Paginação</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Políticas de Substituição de Páginas</Link>
+            <Link to="/post/memoria-virtual-politicas-de-substituição-paginas">Políticas de Substituição de Páginas</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Proteção de Memória</Link>
+            <Link to="/post/memoria-virtual-protecao-de-memoria">Proteção de Memória</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Swapping em Memória Virtual</Link>
+            <Link to="/post/memoria-virtual-swapping">Swapping em Memória Virtual</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Thrashing</Link>
+            <Link to="/post/memoria-virtual-thrashing">Thrashing</Link>
           </S.Item>
         </S.ItemsContainer>
       </S.Menu>
