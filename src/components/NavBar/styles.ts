@@ -39,6 +39,7 @@ export const NavbarContainer = styled.nav<NavbarProps>`
   position: fixed;
   transition: 0.5s;
   padding: 0 30px;
+  z-index: 999;
 
   @media (min-width: 700px) {
     height: 70px;

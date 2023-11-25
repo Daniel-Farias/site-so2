@@ -6,7 +6,7 @@ import * as S from '../styles';
 export function MemoriaVirtualSegmentacaoComParticao() {
   return (
     <PostPage>
-      <S.PageTitle>Memória Virtual por Segmentação com Partição</S.PageTitle>
+      <S.PageTitle>Memória Virtual por Segmentação com Paginação</S.PageTitle>
 
       <S.Text>
         A técnica de gerência de memória por segmentação com paginação divide o espaço de endereçamento em segmentos, e cada

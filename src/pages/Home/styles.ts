@@ -9,7 +9,6 @@ export const Container = styled.div`
   padding: 40px 20px;
   height: auto;
   align-items: center;
-  /* margin-bottom: 60px; */
 `;
 
 export const Title = styled.h1`

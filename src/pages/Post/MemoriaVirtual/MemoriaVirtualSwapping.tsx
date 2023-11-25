@@ -6,7 +6,7 @@ import * as S from '../styles';
 export function MemoriaVirtualSwapping() {
   return (
     <PostPage>
-      <S.PageTitle>Proteção de Memória</S.PageTitle>
+      <S.PageTitle>Swapping em Memória Virtual</S.PageTitle>
 
       <S.Text>
         O swapping em memória virtual utiliza a memória virtual para copiar o conteúdo da memória primária (RAM) para ou da

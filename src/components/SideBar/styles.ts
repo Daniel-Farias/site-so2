@@ -1,6 +1,35 @@
 import styled from 'styled-components';
+interface SideBarProps {
+  extend: boolean;
+}
 
-export const Container = styled.aside`
+export const SideBarArea = styled.div<SideBarProps>`
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.4s;
+  transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(-320px)')};
+  @media (max-width: 700px) {
+    position: absolute;
+  }
+`;
+
+export const SideBarToggle = styled.div`
+  font-size: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #3498db;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  @media (max-width: 700px) {
+    display: flex;
+  }
+`;
+
+export const Container = styled.aside<SideBarProps>`
   background: #eeeeee;
   display: flex;
   flex-direction: column;
@@ -8,7 +37,12 @@ export const Container = styled.aside`
   width: 320px;
   min-width: 320px;
   padding: 10px;
-  margin-top: 30px;
+  overflow-x: hidden;
+  transition: transform 0.5s;
+  transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(-320px)')};
+  @media (min-width: 700px) {
+    transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(320px)')};
+  }
 `;
 
 export const LogoContainer = styled.div`
