@@ -1,13 +1,17 @@
+import { animated } from 'react-spring';
 import styled from 'styled-components';
+
 interface SideBarProps {
   extend: boolean;
 }
 
-export const SideBarArea = styled.div<SideBarProps>`
+export const SideBarArea = styled(animated.div)<SideBarProps>`
+  background: #eeeeee;
   display: flex;
   flex-direction: row;
   transition: transform 0.4s;
   transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(-320px)')};
+
   @media (max-width: 700px) {
     position: absolute;
   }
@@ -24,13 +28,13 @@ export const SideBarToggle = styled.div`
   color: #fff;
   cursor: pointer;
   display: none;
+
   @media (max-width: 700px) {
     display: flex;
   }
 `;
 
 export const Container = styled.aside<SideBarProps>`
-  background: #eeeeee;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,9 +44,9 @@ export const Container = styled.aside<SideBarProps>`
   overflow-x: hidden;
   transition: transform 0.5s;
   transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(-320px)')};
-  @media (min-width: 700px) {
-    transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(320px)')};
-  }
+  transition: 'margin-top 0.5s ease-in-out';
+  max-height: 95vh;
+  overflow-y: auto;
 `;
 
 export const LogoContainer = styled.div`
@@ -53,7 +57,7 @@ export const LogoContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-  height: 100px;
+  height: 80px;
   margin-bottom: 10px;
 `;
 

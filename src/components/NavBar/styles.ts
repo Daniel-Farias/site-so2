@@ -77,6 +77,7 @@ const LinkBaseStyle = css`
   &:hover {
     color: #3498db;
   }
+
   @media (max-width: 700px) {
     margin: 5px 0;
   }
@@ -85,11 +86,13 @@ const LinkBaseStyle = css`
 export const NavbarLinkBase = styled(Link)`
   ${LinkBaseStyle}
 `;
+
 export const AnchorBase = styled.a`
   ${LinkBaseStyle};
 `;
 
 export const NavbarLinkExtended = styled(NavbarLinkBase)``;
+
 export const AnchorLinkExtended = styled(AnchorBase)``;
 
 export const NavbarLink = styled(NavbarLinkBase)`
@@ -97,6 +100,7 @@ export const NavbarLink = styled(NavbarLinkBase)`
     display: none;
   }
 `;
+
 export const Anchor = styled(AnchorBase)`
   @media (max-width: 700px) {
     display: none;
@@ -110,6 +114,7 @@ export const ButtonLink = styled.button`
   border: none;
   color: white;
   cursor: pointer;
+
   svg {
     font-size: 30px;
   }
