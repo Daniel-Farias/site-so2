@@ -4,10 +4,10 @@ export const Container = styled.div`
   background: #e0e0e0;
   color: #000;
   width: 100vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
-  height: auto;
   align-items: center;
 `;
 
@@ -28,6 +28,7 @@ export const Filter = styled.li`
   & + & {
     margin-left: 10px;
   }
+
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
@@ -46,9 +47,22 @@ export const Filter = styled.li`
   }
 `;
 
-export const PostsList = styled.section`
+export const PostListContainer = styled.section`
+  width: 100%;
   margin-top: 20px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+export const PostsList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
