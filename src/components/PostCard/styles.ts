@@ -18,7 +18,7 @@ export const Image = styled.img`
 `;
 
 export const Body = styled.div`
-  background: #39405c;
+  background: #3c389e;
   padding: 15px;
 `;
 

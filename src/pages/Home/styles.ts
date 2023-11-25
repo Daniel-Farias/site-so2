@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #07080b;
-  color: #fff;
+  background: #e0e0e0;
+  color: #000;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px 20px;
   height: auto;
-  margin-bottom: 60px;
+  align-items: center;
+  /* margin-bottom: 60px; */
 `;
 
 export const Title = styled.h1`

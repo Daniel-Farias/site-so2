@@ -27,7 +27,7 @@ export const NavbarContainer = styled.nav<NavbarProps>`
   top: 0;
   width: 100%;
   height: ${(props) => (props.open ? '30vh' : '80px')};
-  background-color: #39405c;
+  background-color: #3c389e;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -60,12 +60,13 @@ export const NavbarLinkContainer = styled.div`
 
 const LinkBaseStyle = css`
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-weight: bold;
   margin-left: 50px;
   transition: 0.5s;
+  text-transform: capitalize;
 
   &:hover {
     color: #ff9000;

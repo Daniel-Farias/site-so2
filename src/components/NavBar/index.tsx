@@ -40,8 +40,8 @@ export function NavBar() {
         {extendNavbar && (
           <S.ExtendedNavbar>
             <S.NavbarLinkExtended to="/home">Home</S.NavbarLinkExtended>
-            <S.NavbarLinkExtended to="/about">About Us</S.NavbarLinkExtended>
-            <S.NavbarLinkExtended to="/contact">Contact Us</S.NavbarLinkExtended>
+            <S.NavbarLinkExtended to="/about">Gerência de Memória</S.NavbarLinkExtended>
+            <S.NavbarLinkExtended to="/post/memoria-virtual-introducao">Memória Virtual</S.NavbarLinkExtended>
             <S.AnchorLinkExtended href="#help">Ajuda</S.AnchorLinkExtended>
           </S.ExtendedNavbar>
         )}
