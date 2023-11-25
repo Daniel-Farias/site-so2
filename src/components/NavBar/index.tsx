@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { FaChevronCircleLeft } from 'react-icons/fa';
+import { FaChevronCircleLeft, FaBars } from 'react-icons/fa';
+import { FaXmark } from 'react-icons/fa6';
+
 import logo from '../../assets/images/UESPI_logo.png';
 import * as S from './styles';
 
@@ -33,9 +35,7 @@ export function NavBar() {
           <S.NavbarLink to="/post/gerencia-de-memoria-introducao">Gerência de Memória</S.NavbarLink>
           <S.NavbarLink to="/post/memoria-virtual-introducao">Memória Virtual</S.NavbarLink>
           <S.Anchor href="#help">Ajuda</S.Anchor>
-          <S.ButtonLink onClick={() => setExtendNavbar((curr) => !curr)}>
-            {extendNavbar ? <>&#10005;</> : <>&#8801;</>}
-          </S.ButtonLink>
+          <S.ButtonLink onClick={() => setExtendNavbar((curr) => !curr)}>{extendNavbar ? <FaXmark /> : <FaBars />}</S.ButtonLink>
         </S.NavbarLinkContainer>
         {extendNavbar && (
           <S.ExtendedNavbar>

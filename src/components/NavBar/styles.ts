@@ -6,7 +6,7 @@ interface NavbarProps {
 }
 
 export const Header = styled.header`
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 `;
 
 export const BackButton = styled(Link)`
@@ -19,7 +19,11 @@ export const BackButton = styled(Link)`
   color: white;
 
   &:hover {
-    color: #ff9000;
+    color: #3498db;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
   }
 `;
 
@@ -27,7 +31,7 @@ export const NavbarContainer = styled.nav<NavbarProps>`
   top: 0;
   width: 100%;
   height: ${(props) => (props.open ? '30vh' : '80px')};
-  background-color: #3c389e;
+  background-color: #021118;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -39,6 +43,7 @@ export const NavbarContainer = styled.nav<NavbarProps>`
   @media (min-width: 700px) {
     height: 70px;
   }
+
   @media (max-width: 700px) {
     flex-direction: column;
     justify-content: ${(props) => (props.open ? 'flex-start' : 'center')};
@@ -56,6 +61,7 @@ export const Img = styled.img`
 
 export const NavbarLinkContainer = styled.div`
   display: flex;
+  gap: 30px;
 `;
 
 const LinkBaseStyle = css`
@@ -64,12 +70,14 @@ const LinkBaseStyle = css`
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 50px;
   transition: 0.5s;
   text-transform: capitalize;
 
   &:hover {
-    color: #ff9000;
+    color: #3498db;
+  }
+  @media (max-width: 700px) {
+    margin: 5px 0;
   }
 `;
 
@@ -100,8 +108,10 @@ export const ButtonLink = styled.button`
   background: none;
   border: none;
   color: white;
-  font-size: 40px;
   cursor: pointer;
+  svg {
+    font-size: 30px;
+  }
 
   @media (min-width: 700px) {
     display: none;

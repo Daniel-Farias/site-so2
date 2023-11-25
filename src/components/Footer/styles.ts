@@ -2,19 +2,25 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  background: #000;
+  background: #021118;
 `;
 
 export const Footer = styled.footer`
   position: relative;
   padding: 20px 0;
-  background: #181818;
+  background: #021118;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
   color: white;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 `;
 
 export const Img = styled.img`
@@ -31,11 +37,14 @@ export const AreaImage = styled.div`
 export const Copyright = styled.div`
   background: #222;
   padding: 5px;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   text-align: center;
   color: white;
 `;
-export const Widget = styled.div``;
+export const Widget = styled.div`
+  width: 100%;
+  padding: 30px;
+`;
 
 export const WidgetTitle = styled.h5`
   font-size: 1.3rem;

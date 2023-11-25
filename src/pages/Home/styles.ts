@@ -31,9 +31,10 @@ export const Filter = styled.li`
   }
   cursor: pointer;
   font-weight: bold;
+  text-transform: uppercase;
 
   &.active {
-    color: #ff9000;
+    color: #3498db;
 
     &:after {
       content: '';
@@ -41,7 +42,7 @@ export const Filter = styled.li`
       width: 100%;
       height: 2px;
       margin-top: 5px;
-      background: #ff9000;
+      background: #3498db;
     }
   }
 `;

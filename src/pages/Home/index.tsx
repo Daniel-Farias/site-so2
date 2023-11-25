@@ -5,15 +5,27 @@ import * as S from './styles';
 const posts = [
   {
     title: 'The leading crypto trends: 4 trends to keep an eye',
-    categories: ['UI DESIGN'],
+    categories: ['Memória Virtual'],
   },
   {
     title: 'What is Talentum and what is our ideology',
-    categories: ['COMPANY'],
+    categories: ['Gerência de Memória'],
   },
   {
     title: 'New power tools for gig economy',
-    categories: ['REVIEW', 'NEWS'],
+    categories: ['Memória Virtual', 'Gerência de Memória'],
+  },
+  {
+    title: 'The leading crypto trends: 4 trends to keep an eye',
+    categories: ['Memória Virtual'],
+  },
+  {
+    title: 'What is Talentum and what is our ideology',
+    categories: ['Gerência de Memória'],
+  },
+  {
+    title: 'New power tools for gig economy',
+    categories: ['Memória Virtual', 'Gerência de Memória'],
   },
 ];
 
@@ -25,19 +37,13 @@ export function HomePage() {
       <S.Title>Sistemas Operacionais II</S.Title>
       <S.FilterContainer>
         <S.Filter onClick={() => setFilter('')} className={filter === '' ? 'active' : ''}>
-          All
+          Todos
         </S.Filter>
-        <S.Filter onClick={() => setFilter('UI DESIGN')} className={filter === 'UI DESIGN' ? 'active' : ''}>
-          UI DESIGN
+        <S.Filter onClick={() => setFilter('Gerência de Memória')} className={filter === 'Gerência de Memória' ? 'active' : ''}>
+          Gerência de Memória
         </S.Filter>
-        <S.Filter onClick={() => setFilter('COMPANY')} className={filter === 'COMPANY' ? 'active' : ''}>
-          COMPANY
-        </S.Filter>
-        <S.Filter onClick={() => setFilter('REVIEW')} className={filter === 'REVIEW' ? 'active' : ''}>
-          REVIEW
-        </S.Filter>
-        <S.Filter onClick={() => setFilter('NEWS')} className={filter === 'NEWS' ? 'active' : ''}>
-          NEWS
+        <S.Filter onClick={() => setFilter('Memória Virtual')} className={filter === 'Memória Virtual' ? 'active' : ''}>
+          Memória Virtual
         </S.Filter>
       </S.FilterContainer>
       <S.PostsList>

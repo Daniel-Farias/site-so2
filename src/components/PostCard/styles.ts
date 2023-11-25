@@ -18,7 +18,7 @@ export const Image = styled.img`
 `;
 
 export const Body = styled.div`
-  background: #3c389e;
+  background: #021118;
   padding: 15px;
 `;
 
@@ -30,7 +30,7 @@ export const Category = styled.span`
   border-radius: 4px;
   font-size: 14px;
   color: #fff;
-  background: #ff9000;
+  background: #3498db;
   padding: 5px;
   margin-right: 5px;
 `;
