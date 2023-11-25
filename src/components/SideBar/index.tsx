@@ -14,28 +14,28 @@ export function SideBar() {
         <S.Title>Gerência de Memória</S.Title>
         <S.ItemsContainer>
           <S.Item>
-            <Link to="/post/">Introdução</Link>
+            <Link to="/post/gerencia-de-memoria-introducao">Introdução</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Alocação Contígua Simples</Link>
+            <Link to="/post/gerencia-de-memoria-alocacao-contigua-simples">Alocação Contígua Simples</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Overlay</Link>
+            <Link to="/post/gerencia-de-memoria-overlay">Overlay</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Alocação Particionada Estática</Link>
+            <Link to="/post/gerencia-de-memoria-alocacao-particionada-fixa">Alocação Particionada Estática</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Alocação Particionada Estática Absoluta</Link>
+            <Link to="/post/gerencia-de-memoria-alocacao-particionada-absoluta">Alocação Particionada Estática Absoluta</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Alocação Particionada Dinâmica</Link>
+            <Link to="/post/gerencia-de-memoria-alocacao-particionada-dinamica">Alocação Particionada Dinâmica</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Estratégias de Alocação de Partição</Link>
+            <Link to="/post/gerencia-de-memoria-estrategias-de-alocacao">Estratégias de Alocação de Partição</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Swapping</Link>
+            <Link to="/post/gerencia-de-memoria-swapping">Swapping</Link>
           </S.Item>
         </S.ItemsContainer>
       </S.Menu>
@@ -49,22 +49,22 @@ export function SideBar() {
             <Link to="/post/memoria-virtual-paginacao">Memória Virtual por Paginação</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Memória Virtual por Segmentação</Link>
+            <Link to="/post/memoria-virtual-segmentacao">Memória Virtual por Segmentação</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Memória Virtual por Segmentação com Paginação</Link>
+            <Link to="/post/memoria-virtual-segmentacao-com-paginacao">Memória Virtual por Segmentação com Paginação</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Políticas de Substituição de Páginas</Link>
+            <Link to="/post/memoria-virtual-politicas-de-substituição-paginas">Políticas de Substituição de Páginas</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Proteção de Memória</Link>
+            <Link to="/post/memoria-virtual-protecao-de-memoria">Proteção de Memória</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Swapping em Memória Virtual</Link>
+            <Link to="/post/memoria-virtual-swapping">Swapping em Memória Virtual</Link>
           </S.Item>
           <S.Item>
-            <Link to="/post/">Thrashing</Link>
+            <Link to="/post/memoria-virtual-thrashing">Thrashing</Link>
           </S.Item>
         </S.ItemsContainer>
       </S.Menu>

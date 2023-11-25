@@ -43,11 +43,20 @@ export const WidgetTitle = styled.h5`
 
 export const Ul = styled.ul`
   list-style: none;
-  /* gap: 5px; */
 `;
 
 export const Paragraph = styled.p`
   margin: 5px 0;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #3498db;
+    }
+  }
 `;
 
 export const Li = styled.li``;

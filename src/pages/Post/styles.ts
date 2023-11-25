@@ -30,3 +30,19 @@ export const ListItem = styled.li`
   margin: 0.6rem;
   margin-left: 2.5rem;
 `;
+
+export const MediaContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+`;
+
+export const Video = styled.iframe`
+  border: 0;
+  max-width: 500px;
+  width: 100%;
+  height: 300px;
+`;

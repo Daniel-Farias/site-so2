@@ -30,7 +30,7 @@ export function NavBar() {
           <S.NavbarLink to="/" onClick={scrollToTop}>
             Home
           </S.NavbarLink>
-          <S.NavbarLink to="/contact">Gerência de Memória</S.NavbarLink>
+          <S.NavbarLink to="/post/gerencia-de-memoria-introducao">Gerência de Memória</S.NavbarLink>
           <S.NavbarLink to="/post/memoria-virtual-introducao">Memória Virtual</S.NavbarLink>
           <S.Anchor href="#help">Ajuda</S.Anchor>
           <S.ButtonLink onClick={() => setExtendNavbar((curr) => !curr)}>
@@ -39,8 +39,7 @@ export function NavBar() {
         </S.NavbarLinkContainer>
         {extendNavbar && (
           <S.ExtendedNavbar>
-            <S.NavbarLinkExtended to="/home">Home</S.NavbarLinkExtended>
-            <S.NavbarLinkExtended to="/about">Gerência de Memória</S.NavbarLinkExtended>
+            <S.NavbarLinkExtended to="/post/gerencia-de-memoria-introducao">Gerência de Memória</S.NavbarLinkExtended>
             <S.NavbarLinkExtended to="/post/memoria-virtual-introducao">Memória Virtual</S.NavbarLinkExtended>
             <S.AnchorLinkExtended href="#help">Ajuda</S.AnchorLinkExtended>
           </S.ExtendedNavbar>
