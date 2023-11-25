@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/UESPI_logo.png';
 import * as S from './styles';
 
@@ -19,10 +20,14 @@ export function Footer() {
           <S.Divider />
           <S.Ul>
             <S.Li>
-              <S.Paragraph>Gerência de Memória</S.Paragraph>
+              <S.Paragraph>
+                <Link to="/post/gerencia-de-memoria-introducao">Gerência de Memória</Link>
+              </S.Paragraph>
             </S.Li>
             <S.Li>
-              <S.Paragraph>Memória Virtual</S.Paragraph>
+              <S.Paragraph>
+                <Link to="/post/memoria-virtual-introducao">Memória Virtual</Link>
+              </S.Paragraph>
             </S.Li>
           </S.Ul>
         </S.Widget>
