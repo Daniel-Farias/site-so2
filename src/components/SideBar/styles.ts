@@ -47,6 +47,7 @@ export const Container = styled.aside<SideBarProps>`
   transition: 'margin-top 0.5s ease-in-out';
   max-height: 95vh;
   overflow-y: auto;
+  padding-bottom: 60px;
 `;
 
 export const LogoContainer = styled.div`
@@ -95,7 +96,7 @@ export const Item = styled.li`
     color: #000;
 
     &:hover {
-      color: #888;
+      color: #2980b9;
     }
   }
 `;

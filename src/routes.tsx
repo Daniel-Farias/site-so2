@@ -17,6 +17,7 @@ import { MemoriaVirtualSubstituicaoPaginas } from './pages/Post/MemoriaVirtual/M
 import { MemoriaVirtualProtecaoMemoria } from './pages/Post/MemoriaVirtual/MemoriaVirtualProtecaoMemoria';
 import { MemoriaVirtualSwapping } from './pages/Post/MemoriaVirtual/MemoriaVirtualSwapping';
 import { MemoriaVirtualThrashing } from './pages/Post/MemoriaVirtual/MemoriaVirtualThrashing';
+import { ReferencesPage } from './pages/References';
 import { Post404Page } from './pages/404';
 import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
@@ -55,6 +56,7 @@ export function Routes() {
         <Route path="/post/memoria-virtual-protecao-de-memoria" element={<MemoriaVirtualProtecaoMemoria />} />
         <Route path="/post/memoria-virtual-swapping" element={<MemoriaVirtualSwapping />} />
         <Route path="/post/memoria-virtual-thrashing" element={<MemoriaVirtualThrashing />} />
+        <Route path="/referencias" element={<ReferencesPage />} />
         <Route path="/post/*" element={<Post404Page />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </RoutesContainer>

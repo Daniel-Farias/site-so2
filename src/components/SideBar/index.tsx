@@ -99,6 +99,14 @@ export function SideBar() {
             </S.Item>
           </S.ItemsContainer>
         </S.Menu>
+        <S.Menu>
+          <S.Title>Referências</S.Title>
+          <S.ItemsContainer>
+            <S.Item>
+              <Link to="/referencias">Lista de Referências</Link>
+            </S.Item>
+          </S.ItemsContainer>
+        </S.Menu>
       </S.Container>
       <S.SideBarToggle onClick={() => setExtendSideBar((curr) => !curr)}>
         {extendSideBar ? <FaAngleLeft /> : <FaAngleRight />}
