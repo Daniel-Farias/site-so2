@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { FaChevronCircleLeft, FaBars } from 'react-icons/fa';
 import { FaXmark } from 'react-icons/fa6';
-
 import logo from '../../assets/images/UESPI_logo.png';
 import * as S from './styles';
 

@@ -91,6 +91,10 @@ export const Item = styled.li`
   margin-top: 8px;
   margin-bottom: 10px;
 
+  &.active {
+    color: #2980b9 !important;
+  }
+
   a {
     text-decoration: none;
     color: #000;
@@ -98,5 +102,9 @@ export const Item = styled.li`
     &:hover {
       color: #2980b9;
     }
+  }
+
+  a.active {
+    color: #2980b9 !important;
   }
 `;

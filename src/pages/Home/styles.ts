@@ -33,6 +33,10 @@ export const Title = styled.h1`
   color: #ffffff;
   bottom: 20px;
   left: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 `;
 
 export const FilterContainer = styled.ul`
@@ -40,14 +44,11 @@ export const FilterContainer = styled.ul`
   flex-direction: row;
   padding: 0;
   list-style: none;
-  margin: 20px 0;
+  margin: 20px;
+  gap: 20px;
 `;
 
 export const Filter = styled.li`
-  & + & {
-    margin-left: 10px;
-  }
-
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
