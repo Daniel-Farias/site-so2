@@ -1,8 +1,10 @@
 import * as S from './styles';
+// import image from '../../assets/card_introducao.png';
 
 interface Props {
   data: {
     title: string;
+    image: any;
     categories: string[];
   };
 }
@@ -10,7 +12,7 @@ interface Props {
 export function PostCard({ data }: Props) {
   return (
     <S.Content>
-      <S.Image src="https://source.unsplash.com/random" alt="Post Image" />
+      <S.Image src={data.image} alt="Post Image" />
       <S.Body>
         <S.CategoryContainer>
           {data.categories.map((category) => (

@@ -11,9 +11,27 @@ export const Container = styled.div`
   align-items: center;
 `;
 
+export const Banner = styled.div`
+  position: relative;
+  width: 65%;
+  height: 250px;
+  display: flex;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow:
+    0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/5120230-atualizacao-conceito-programador-atualizacao-operacao-sistema-do-computador-ilustracaoial-plana-vetor.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+`;
+
 export const Title = styled.h1`
-  font-size: 50px;
-  margin: 50px 0;
+  font-size: 40px;
+  position: absolute;
+  color: #021118;
+  bottom: 20px;
+  left: 15px;
 `;
 
 export const FilterContainer = styled.ul`

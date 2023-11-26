@@ -40,6 +40,7 @@ export const Container = styled.aside<SideBarProps>`
   overflow-x: hidden;
   transition: transform 0.5s;
   transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(-320px)')};
+
   @media (min-width: 700px) {
     transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(320px)')};
   }
