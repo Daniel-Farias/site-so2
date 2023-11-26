@@ -25,6 +25,9 @@ export const Banner = styled.div`
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 export const Title = styled.h1`
