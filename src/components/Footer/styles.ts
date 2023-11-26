@@ -41,6 +41,7 @@ export const Copyright = styled.div`
   text-align: center;
   color: white;
 `;
+
 export const Widget = styled.div`
   width: 100%;
   padding: 30px;
@@ -82,9 +83,7 @@ export const Button = styled.button`
   color: #fff;
   background-color: #39405c;
   border-radius: 5px;
-  transition:
-    background-color 0.3s,
-    color 0.3s;
+  transition: color 0.3s;
 
   &&:hover {
     background-color: #2980b9;

@@ -4,11 +4,11 @@ import * as S from './styles';
 
 export function Footer() {
   return (
-    <S.Container id="help">
+    <S.Container id="help" className="footer">
       <S.Footer>
         <S.Widget>
           <S.AreaImage>
-            <S.Img src={logo} alt="img" />
+            <S.Img src={logo} alt="UESPI" />
             <S.WidgetTitle>BCC - BLOCO 06</S.WidgetTitle>
           </S.AreaImage>
           <S.Divider />
@@ -36,7 +36,6 @@ export function Footer() {
           <S.WidgetTitle>Fale conosco</S.WidgetTitle>
           <S.Divider />
           <S.Paragraph>Entre em contato com a nossa equipe para tirar dúvidas!</S.Paragraph>
-
           <S.TextArea placeholder="Insira aqui seu comentário"></S.TextArea>
           <S.Button type="button">Enviar</S.Button>
         </S.Widget>
