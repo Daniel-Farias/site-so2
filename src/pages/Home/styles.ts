@@ -39,7 +39,7 @@ export const FilterContainer = styled.ul`
   flex-direction: row;
   padding: 0;
   list-style: none;
-  margin: 10px 0;
+  margin: 20px 0;
 `;
 
 export const Filter = styled.li`

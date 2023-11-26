@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { PostCard } from '../../components/PostCard';
-
 import { posts } from '../../data/posts';
-
 import * as S from './styles';
 
 export function HomePage() {
@@ -27,6 +25,7 @@ export function HomePage() {
       <S.PostListContainer>
         <S.PostsList>
           {posts
+            .sort((a, b) => (a.title > b.title ? 1 : -1))
             .filter((post) => (filter ? post.categories.includes(filter) : true))
             .map((post) => (
               <PostCard data={post} key={post.title} />

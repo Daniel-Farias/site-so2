@@ -6,7 +6,6 @@ import GM5 from '../assets/images/cards/gerencia-de-memoria/card_alocacao_partic
 import GM6 from '../assets/images/cards/gerencia-de-memoria/card_alocacao_particionada_dinamica.png';
 import GM7 from '../assets/images/cards/gerencia-de-memoria/card_estrategias_de_alocacao_de_particao.png';
 import GM8 from '../assets/images/cards/gerencia-de-memoria/card_swapping.png';
-
 import MV1 from '../assets/images/cards/memoria-virtual/card_introducao.png';
 import MV2 from '../assets/images/cards/memoria-virtual/card_memoria_virtual_por_paginacao.png';
 import MV3 from '../assets/images/cards/memoria-virtual/card_memoria_virtual_por_segmentacao.png';

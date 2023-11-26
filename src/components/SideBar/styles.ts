@@ -24,7 +24,7 @@ export const SideBarToggle = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #3498db;
+  background: #021118;
   color: #fff;
   cursor: pointer;
   display: none;
@@ -44,17 +44,10 @@ export const Container = styled.aside<SideBarProps>`
   overflow-x: hidden;
   transition: transform 0.5s;
   transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(-320px)')};
-<<<<<<< HEAD
-
-  @media (min-width: 700px) {
-    transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(320px)')};
-  }
-=======
   transition: 'margin-top 0.5s ease-in-out';
   max-height: 95vh;
   overflow-y: auto;
   padding-bottom: 60px;
->>>>>>> 9afa23efc195da3ac5e271ac5cebaa262b8b2a58
 `;
 
 export const LogoContainer = styled.div`
