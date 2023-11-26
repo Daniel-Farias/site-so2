@@ -7,7 +7,7 @@ import * as S from './styles';
 
 export function SideBar() {
   const location = useLocation();
-  const [extendSideBar, setExtendSideBar] = useState(true);
+  const [extendSideBar, setExtendSideBar] = useState(window.innerWidth >= 700);
   const [sidebarTop, setSidebarTop] = useState(0);
 
   const springStyles = useSpring({

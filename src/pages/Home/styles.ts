@@ -25,6 +25,7 @@ export const Banner = styled.div`
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
+
   @media (max-width: 768px) {
     width: 90%;
   }
@@ -49,12 +50,14 @@ export const FilterContainer = styled.ul`
   list-style: none;
   margin: 20px;
   gap: 20px;
+  justify-content: space-between;
 `;
 
 export const Filter = styled.li`
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
 
   &.active {
     color: #3498db;

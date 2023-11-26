@@ -39,6 +39,7 @@ export function NavBar() {
         </S.NavbarLinkContainer>
         {extendNavbar && (
           <S.ExtendedNavbar>
+            <S.NavbarLinkExtended to="/">Home</S.NavbarLinkExtended>
             <S.NavbarLinkExtended to="/post/gerencia-de-memoria-introducao">Gerência de Memória</S.NavbarLinkExtended>
             <S.NavbarLinkExtended to="/post/memoria-virtual-introducao">Memória Virtual</S.NavbarLinkExtended>
             <S.NavbarLinkExtended to="/referencias">Referências</S.NavbarLinkExtended>

@@ -4,7 +4,8 @@ import * as S from './styles';
 export function ReferencesPage() {
   return (
     <PostPage>
-      <S.Title>Referências</S.Title>
+      <S.PageTitle>Referências</S.PageTitle>
+
       <S.List>
         <S.ListItem>
           <S.Name>MORENO, Edson. Sistemas Operacionais: Memória virtual. PUCRS, 2012.</S.Name>
