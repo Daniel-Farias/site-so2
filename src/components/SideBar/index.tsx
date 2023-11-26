@@ -34,8 +34,8 @@ export function SideBar() {
   }, [window.innerWidth]);
 
   return (
-    <S.SideBarArea extend={extendSideBar} style={springStyles} className="sidebar">
-      <S.Container extend={extendSideBar}>
+    <S.SideBarArea open={extendSideBar} style={springStyles} className="sidebar">
+      <S.Container open={extendSideBar}>
         <S.LogoContainer>
           <S.Logo src={LogoUESPI} />
           <S.LogoText>Universidade Estadual do Piauí</S.LogoText>

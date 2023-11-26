@@ -1,17 +1,19 @@
+import { FaCalendarAlt } from 'react-icons/fa';
 import * as S from './styles';
-// import image from '../../assets/card_introducao.png';
 
 interface Props {
   data: {
     title: string;
-    image: any;
+    image: string;
     categories: string[];
+    link: string;
+    date: string;
   };
 }
 
 export function PostCard({ data }: Props) {
   return (
-    <S.Content>
+    <S.Content to={data.link}>
       <S.Image src={data.image} alt="Post Image" />
       <S.Body>
         <S.CategoryContainer>
@@ -21,7 +23,9 @@ export function PostCard({ data }: Props) {
         </S.CategoryContainer>
         <S.Title>{data.title}</S.Title>
         <S.Footer>
-          <S.Date>10/10/2021</S.Date>
+          <S.Date>
+            {data.date} <FaCalendarAlt />
+          </S.Date>
         </S.Footer>
       </S.Body>
     </S.Content>

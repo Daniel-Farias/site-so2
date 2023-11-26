@@ -2,7 +2,7 @@ import { animated } from 'react-spring';
 import styled from 'styled-components';
 
 interface SideBarProps {
-  extend: boolean;
+  open: boolean;
 }
 
 export const SideBarArea = styled(animated.div)<SideBarProps>`
@@ -10,7 +10,7 @@ export const SideBarArea = styled(animated.div)<SideBarProps>`
   display: flex;
   flex-direction: row;
   transition: transform 0.4s;
-  transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(-320px)')};
+  transform: ${(props) => (props.open ? 'translateX(0)' : 'translateX(-320px)')};
 
   @media (max-width: 700px) {
     position: absolute;
@@ -43,7 +43,7 @@ export const Container = styled.aside<SideBarProps>`
   padding: 10px;
   overflow-x: hidden;
   transition: transform 0.5s;
-  transform: ${(props) => (props.extend ? 'translateX(0)' : 'translateX(-320px)')};
+  transform: ${(props) => (props.open ? 'translateX(0)' : 'translateX(-320px)')};
   transition: 'margin-top 0.5s ease-in-out';
   max-height: 95vh;
   overflow-y: auto;

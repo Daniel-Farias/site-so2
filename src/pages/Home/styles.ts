@@ -21,15 +21,16 @@ export const Banner = styled.div`
   box-shadow:
     0 2px 4px 0 rgba(0, 0, 0, 0.2),
     0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/5120230-atualizacao-conceito-programador-atualizacao-operacao-sistema-do-computador-ilustracaoial-plana-vetor.jpg');
+  background-image: url('https://i.imgur.com/KdeWiEz.png');
   background-repeat: no-repeat;
   background-position: top left;
+  background-size: cover;
 `;
 
 export const Title = styled.h1`
   font-size: 40px;
   position: absolute;
-  color: #021118;
+  color: #ffffff;
   bottom: 20px;
   left: 15px;
 `;

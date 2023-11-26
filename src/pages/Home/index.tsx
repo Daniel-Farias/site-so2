@@ -25,7 +25,6 @@ export function HomePage() {
       <S.PostListContainer>
         <S.PostsList>
           {posts
-            .sort((a, b) => (a.title > b.title ? 1 : -1))
             .filter((post) => (filter ? post.categories.includes(filter) : true))
             .map((post) => (
               <PostCard data={post} key={post.title} />

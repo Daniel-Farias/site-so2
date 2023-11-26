@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const Content = styled.div`
+export const Content = styled(Link)`
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -9,6 +10,12 @@ export const Content = styled.div`
   max-width: 300px;
   border-radius: 4px;
   margin: 10px 10px 10px 0;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
 `;
 
 export const Image = styled.img`
@@ -20,6 +27,10 @@ export const Image = styled.img`
 export const Body = styled.div`
   background: #021118;
   padding: 15px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const CategoryContainer = styled.div`
@@ -45,4 +56,11 @@ export const Footer = styled.div`
 
 export const Date = styled.span`
   font-size: 14px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  svg {
+    margin-right: 8px;
+  }
 `;
