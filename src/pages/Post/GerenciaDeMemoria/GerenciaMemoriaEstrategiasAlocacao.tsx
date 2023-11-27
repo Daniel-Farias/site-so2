@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img9 from '../../../assets/images/gerencia-de-memoria/9.png';
 import Img10 from '../../../assets/images/gerencia-de-memoria/10.png';
 import Img11 from '../../../assets/images/gerencia-de-memoria/11.png';
@@ -32,7 +33,7 @@ export function GerenciaMemoriaEstrategiasAlocacao() {
         </S.ListItem>
 
         <S.MediaContainer>
-          <Image image={Img9} caption="Figura 1: Estratégia Best-fit" credit="​​https://slideplayer.com.br/slide/13014736/" />
+          <Image image={Img9} caption="Figura 1: Estratégia Best-fit" credit="​https://slideplayer.com.br/slide/13014736/" />
         </S.MediaContainer>
       </S.List>
 
@@ -65,9 +66,10 @@ export function GerenciaMemoriaEstrategiasAlocacao() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/8Bco-NvY3SY?si=wua9fjNnNDe9jDIT"
-          title="Gerência de memória: Estratégias de alocação de programas em memória principal."
+          caption="Gerência de memória: Estratégias de alocação de programas em memória principal."
+          credit="Youtube - Canal: Prof. João Batista"
         />
       </S.MediaContainer>
     </PostPage>

@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img11 from '../../../assets/images/memoria-virtual/11.png';
 import Img12 from '../../../assets/images/memoria-virtual/12.png';
 import * as S from '../styles';
@@ -55,9 +56,10 @@ export function MemoriaVirtualProtecaoMemoria() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/XpIWhtuqDyQ?si=9VZIBVD5laKEl_r4"
-          title="Me Salva Sistemas Operacionais: Proteção de Memória com a Paginação"
+          caption="Me Salva Sistemas Operacionais: Proteção de Memória com a Paginação"
+          credit="Youtube - Canal: Prof. Santiago - Programação e Ciência"
         />
       </S.MediaContainer>
     </PostPage>

@@ -5,6 +5,93 @@ import { useSpring } from 'react-spring';
 import LogoUESPI from '../../assets/images/UESPI_logo.png';
 import * as S from './styles';
 
+const menus = [
+  {
+    title: 'Gerência de Memória',
+    links: [
+      {
+        name: 'Introdução',
+        link: '/post/gerencia-de-memoria-introducao',
+      },
+      {
+        name: 'Alocação Contígua Simples',
+        link: '/post/gerencia-de-memoria-alocacao-contigua-simples',
+      },
+      {
+        name: 'Overlay',
+        link: '/post/gerencia-de-memoria-overlay',
+      },
+      {
+        name: 'Alocação Particionada Estática',
+        link: '/post/gerencia-de-memoria-alocacao-particionada-fixa',
+      },
+      {
+        name: 'Alocação Particionada Estática Absoluta',
+        link: '/post/gerencia-de-memoria-alocacao-particionada-absoluta',
+      },
+      {
+        name: 'Alocação Particionada Dinâmica',
+        link: '/post/gerencia-de-memoria-alocacao-particionada-dinamica',
+      },
+      {
+        name: 'Estratégias de Alocação de Partição',
+        link: '/post/gerencia-de-memoria-estrategias-de-alocacao',
+      },
+      {
+        name: 'Swapping',
+        link: '/post/gerencia-de-memoria-swapping',
+      },
+    ],
+  },
+
+  {
+    title: 'Memória Virtual',
+    links: [
+      {
+        name: 'Introdução',
+        link: '/post/memoria-virtual-introducao',
+      },
+      {
+        name: 'Memória Virtual por Paginação',
+        link: '/post/memoria-virtual-paginacao',
+      },
+      {
+        name: 'Memória Virtual por Segmentação',
+        link: '/post/memoria-virtual-segmentacao',
+      },
+      {
+        name: 'Memória Virtual por Segmentação com Paginação',
+        link: '/post/memoria-virtual-segmentacao-com-paginacao',
+      },
+      {
+        name: 'Políticas de Substituição de Páginas',
+        link: '/post/memoria-virtual-politicas-de-substituição-paginas',
+      },
+      {
+        name: 'Proteção de Memória',
+        link: '/post/memoria-virtual-protecao-de-memoria',
+      },
+      {
+        name: 'Swapping em Memória Virtual',
+        link: '/post/memoria-virtual-swapping',
+      },
+      {
+        name: 'Thrashing',
+        link: '/post/memoria-virtual-thrashing',
+      },
+    ],
+  },
+  {
+    title: 'Referências',
+    links: [
+      {
+        name: 'Lista de Referências',
+        link: '/referencias',
+      },
+    ],
+  },
+];
+
 export function SideBar() {
   const location = useLocation();
   const [extendSideBar, setExtendSideBar] = useState(window.innerWidth >= 700);
@@ -16,7 +103,6 @@ export function SideBar() {
   });
 
   useEffect(() => {
-    console.log('location', location.pathname);
     const handleScroll = () => {
       const footer = document.querySelector('.footer') as HTMLElement;
       if (window.pageYOffset + window.innerHeight <= footer.offsetTop) {
@@ -43,154 +129,20 @@ export function SideBar() {
           <S.LogoText>Universidade Estadual do Piauí</S.LogoText>
           <S.LogoText>BCC - BLOCO 06 - 2023</S.LogoText>
         </S.LogoContainer>
-        <S.Menu>
-          <S.Title>Gerência de Memória</S.Title>
-          <S.ItemsContainer>
-            <S.Item className={location.pathname === '/post/gerencia-de-memoria-introducao' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/gerencia-de-memoria-introducao' ? 'active' : ''}
-                to="/post/gerencia-de-memoria-introducao"
-              >
-                Introdução
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/gerencia-de-memoria-alocacao-contigua-simples' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/gerencia-de-memoria-alocacao-contigua-simples' ? 'active' : ''}
-                to="/post/gerencia-de-memoria-alocacao-contigua-simples"
-              >
-                Alocação Contígua Simples
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/gerencia-de-memoria-overlay' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/gerencia-de-memoria-overlay' ? 'active' : ''}
-                to="/post/gerencia-de-memoria-overlay"
-              >
-                Overlay
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/gerencia-de-memoria-alocacao-particionada-fixa' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/gerencia-de-memoria-alocacao-particionada-fixa' ? 'active' : ''}
-                to="/post/gerencia-de-memoria-alocacao-particionada-fixa"
-              >
-                Alocação Particionada Estática
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/gerencia-de-memoria-alocacao-particionada-absoluta' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/gerencia-de-memoria-alocacao-particionada-absoluta' ? 'active' : ''}
-                to="/post/gerencia-de-memoria-alocacao-particionada-absoluta"
-              >
-                Alocação Particionada Estática Absoluta
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/gerencia-de-memoria-alocacao-particionada-dinamica' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/gerencia-de-memoria-alocacao-particionada-dinamica' ? 'active' : ''}
-                to="/post/gerencia-de-memoria-alocacao-particionada-dinamica"
-              >
-                Alocação Particionada Dinâmica
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/gerencia-de-memoria-estrategias-de-alocacao' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/gerencia-de-memoria-estrategias-de-alocacao' ? 'active' : ''}
-                to="/post/gerencia-de-memoria-estrategias-de-alocacao"
-              >
-                Estratégias de Alocação de Partição
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/gerencia-de-memoria-swapping' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/gerencia-de-memoria-swapping' ? 'active' : ''}
-                to="/post/gerencia-de-memoria-swapping"
-              >
-                Swapping
-              </Link>
-            </S.Item>
-          </S.ItemsContainer>
-        </S.Menu>
-        <S.Menu>
-          <S.Title>Mermória Virtual</S.Title>
-          <S.ItemsContainer>
-            <S.Item className={location.pathname === '/post/memoria-virtual-introducao' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/memoria-virtual-introducao' ? 'active' : ''}
-                to="/post/memoria-virtual-introducao"
-              >
-                Introdução
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/memoria-virtual-paginacao' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/memoria-virtual-paginacao' ? 'active' : ''}
-                to="/post/memoria-virtual-paginacao"
-              >
-                Memória Virtual por Paginação
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/memoria-virtual-segmentacao' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/memoria-virtual-segmentacao' ? 'active' : ''}
-                to="/post/memoria-virtual-segmentacao"
-              >
-                Memória Virtual por Segmentação
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/memoria-virtual-segmentacao-com-paginacao' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/memoria-virtual-segmentacao-com-paginacao' ? 'active' : ''}
-                to="/post/memoria-virtual-segmentacao-com-paginacao"
-              >
-                Memória Virtual por Segmentação com Paginação
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/memoria-virtual-politicas-de-substituição-paginas' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/memoria-virtual-politicas-de-substituição-paginas' ? 'active' : ''}
-                to="/post/memoria-virtual-politicas-de-substituição-paginas"
-              >
-                Políticas de Substituição de Páginas
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/memoria-virtual-protecao-de-memoria' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/memoria-virtual-protecao-de-memoria' ? 'active' : ''}
-                to="/post/memoria-virtual-protecao-de-memoria"
-              >
-                Proteção de Memória
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/memoria-virtual-swapping' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/memoria-virtual-swapping' ? 'active' : ''}
-                to="/post/memoria-virtual-swapping"
-              >
-                Swapping em Memória Virtual
-              </Link>
-            </S.Item>
-            <S.Item className={location.pathname === '/post/memoria-virtual-thrashing' ? 'active' : ''}>
-              <Link
-                className={location.pathname === '/post/memoria-virtual-thrashing' ? 'active' : ''}
-                to="/post/memoria-virtual-thrashing"
-              >
-                Thrashing
-              </Link>
-            </S.Item>
-          </S.ItemsContainer>
-        </S.Menu>
-        <S.Menu>
-          <S.Title>Referências</S.Title>
-          <S.ItemsContainer>
-            <S.Item className={location.pathname === '/referencias' ? 'active' : ''}>
-              <Link className={location.pathname === '/referencias' ? 'active' : ''} to="/referencias">
-                Lista de Referências
-              </Link>
-            </S.Item>
-          </S.ItemsContainer>
-        </S.Menu>
+        {menus.map((menu) => (
+          <S.Menu key={menu.title}>
+            <S.Title>{menu.title}</S.Title>
+            <S.ItemsContainer>
+              {menu.links.map((item) => (
+                <S.Item className={location.pathname === item.link ? 'active' : ''} key={item.link}>
+                  <Link className={location.pathname === item.link ? 'active' : ''} to={item.link}>
+                    {item.name}
+                  </Link>
+                </S.Item>
+              ))}
+            </S.ItemsContainer>
+          </S.Menu>
+        ))}
       </S.Container>
       <S.SideBarToggle onClick={() => setExtendSideBar((curr) => !curr)}>
         {extendSideBar ? <FaAngleLeft /> : <FaAngleRight />}

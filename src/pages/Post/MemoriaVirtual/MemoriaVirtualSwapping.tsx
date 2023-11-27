@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img13 from '../../../assets/images/memoria-virtual/13.png';
 import * as S from '../styles';
 
@@ -38,9 +39,10 @@ export function MemoriaVirtualSwapping() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/wnYR1KBc9Ug?si=cn7cFXKySMxV5B9U"
-          title="Me Salva Sistemas Operacionais: O que é Swapping?"
+          caption="Me Salva Sistemas Operacionais: O que é Swapping?"
+          credit="Youtube - Canal: Prof. Santiago - Programação e Ciência"
         />
       </S.MediaContainer>
     </PostPage>

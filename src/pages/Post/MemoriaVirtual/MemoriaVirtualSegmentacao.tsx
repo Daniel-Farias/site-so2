@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img5 from '../../../assets/images/memoria-virtual/5.png';
 import Img6 from '../../../assets/images/memoria-virtual/6.png';
 import * as S from '../styles';
@@ -59,9 +60,10 @@ export function MemoriaVirtualSegmentacao() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/I4KWhoNc_Q8?si=NOcT-7hujlDxD8K2"
-          title="Memória Virtual - Segmentação e Paginação."
+          caption="Memória Virtual - Segmentação e Paginação."
+          credit="Youtube - Canal: Gabriela Silva de Liz"
         />
       </S.MediaContainer>
     </PostPage>

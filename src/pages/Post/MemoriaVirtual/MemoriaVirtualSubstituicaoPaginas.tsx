@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img8 from '../../../assets/images/memoria-virtual/8.png';
 import Img9 from '../../../assets/images/memoria-virtual/9.png';
 import Img10 from '../../../assets/images/memoria-virtual/10.png';
@@ -84,13 +85,15 @@ export function MemoriaVirtualSubstituicaoPaginas() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/j6RMVMUxYmc?si=zlJpoVEKdC6cMXKs"
-          title="Sistemas Operacionais - Aula 20 - Algoritmos de Substituição de Páginas"
+          caption="Sistemas Operacionais - Aula 20 - Algoritmos de Substituição de Páginas"
+          credit="Youtube - Canal: UNIVESP"
         />
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/f-5-tJlkSXY?si=FvJNeucCveGmWaft"
-          title="Algoritmos de Substituição de Cache - FIFO, LRU, LFU e Aleatório"
+          caption="Algoritmos de Substituição de Cache - FIFO, LRU, LFU e Aleatório"
+          credit="Youtube - Canal: DesCOMPlica, Oliba!"
         />
       </S.MediaContainer>
     </PostPage>

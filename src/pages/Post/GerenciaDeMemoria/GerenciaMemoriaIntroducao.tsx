@@ -1,4 +1,5 @@
 import { PostPage } from '../../../components/PostPage';
+import { Video } from '../../../components/Video';
 import * as S from '../styles';
 
 export function GerenciaMemoriaIntroducao() {
@@ -39,9 +40,10 @@ export function GerenciaMemoriaIntroducao() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/Q8ZqjEafmNc?si=5qEu9dyEhySIE2uN"
-          title="Sistemas Operacionais - Aula 17 - Introdução ao Gerenciamento de Memória"
+          caption="Sistemas Operacionais - Aula 17 - Introdução ao Gerenciamento de Memória"
+          credit="Youtube - Canal: UNIVESP"
         />
       </S.MediaContainer>
     </PostPage>

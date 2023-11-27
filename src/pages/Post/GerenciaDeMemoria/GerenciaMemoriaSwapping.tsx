@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img12 from '../../../assets/images/gerencia-de-memoria/12.png';
 import * as S from '../styles';
 
@@ -49,9 +50,10 @@ export function GerenciaMemoriaSwapping() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/wnYR1KBc9Ug?si=dbpJi6gPV86Q7XOj"
-          title="Me Salva Sistemas Operacionais: O que é Swapping?"
+          caption="Me Salva Sistemas Operacionais: O que é Swapping?"
+          credit="Youtube - Canal: Prof. Santiago - Programação e Ciência"
         />
       </S.MediaContainer>
     </PostPage>

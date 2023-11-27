@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img7 from '../../../assets/images/memoria-virtual/7.png';
 import * as S from '../styles';
 
@@ -53,9 +54,10 @@ export function MemoriaVirtualSegmentacaoComParticao() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/TB19DZBVWRw?si=s27lafYodPLKkXI6"
-          title="Segmentação e Segmentação com Paginação"
+          caption="Segmentação e Segmentação com Paginação"
+          credit="Youtube - Canal: Márcio Castro"
         />
       </S.MediaContainer>
     </PostPage>

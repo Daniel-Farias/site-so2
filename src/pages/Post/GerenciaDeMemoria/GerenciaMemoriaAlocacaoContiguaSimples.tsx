@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img1 from '../../../assets/images/gerencia-de-memoria/1.png';
 import * as S from '../styles';
 
@@ -31,7 +32,11 @@ export function GerenciaMemoriaAlocacaoContiguaSimples() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video src="https://www.youtube.com/embed/3pycQqgswAg?si=xC99UiWT6HRQyBzr" title="Alocação Contígua Simples" />
+        <Video
+          src="https://www.youtube.com/embed/3pycQqgswAg?si=xC99UiWT6HRQyBzr"
+          caption="Alocação Contígua Simples"
+          credit="Youtube - Canal: Carlos Leôncio Assunção Costa"
+        />
       </S.MediaContainer>
     </PostPage>
   );

@@ -8,10 +8,11 @@ export const Container = styled.div`
   margin: 1.5rem 0;
 `;
 
-export const Image = styled.img`
-  width: 100%;
+export const Iframe = styled.iframe`
+  border: 0;
   max-width: 500px;
-  height: auto;
+  width: 100%;
+  height: 300px;
 `;
 
 export const Caption = styled.p`

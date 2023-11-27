@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img14 from '../../../assets/images/memoria-virtual/14.png';
 import * as S from '../styles';
 
@@ -54,7 +55,11 @@ export function MemoriaVirtualThrashing() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video src="https://www.youtube.com/embed/7UsHyVPMbI8?si=k-yDU4iROTG3sKn2" title="Thrashing in Operating system" />
+        <Video
+          src="https://www.youtube.com/embed/7UsHyVPMbI8?si=k-yDU4iROTG3sKn2"
+          caption="Thrashing in Operating system"
+          credit="Youtube - Canal: Easy Learning with Nisha"
+        />
       </S.MediaContainer>
     </PostPage>
   );

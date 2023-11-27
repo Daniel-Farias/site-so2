@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img1 from '../../../assets/images/memoria-virtual/1.png';
 import Img2 from '../../../assets/images/memoria-virtual/2.png';
 import Img3 from '../../../assets/images/memoria-virtual/3.png';
@@ -86,7 +87,11 @@ export function MemoriaVirtualIntroducao() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video src="https://www.youtube.com/embed/z11N1DhgYO0?si=MCx-YrpX60_sguJF" title="Memória Virtual" />
+        <Video
+          src="https://www.youtube.com/embed/z11N1DhgYO0?si=MCx-YrpX60_sguJF"
+          caption="Memória Virtual"
+          credit="Youtube - Canal: Dicionário de Informática"
+        />
       </S.MediaContainer>
     </PostPage>
   );

@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img7 from '../../../assets/images/gerencia-de-memoria/7.png';
 import Img8 from '../../../assets/images/gerencia-de-memoria/8.png';
 import * as S from '../styles';
@@ -53,9 +54,10 @@ export function GerenciaMemoriaAlocacaoParticionadaDinamica() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video
+        <Video
           src="https://www.youtube.com/embed/3g3hUv9QRd8?si=eawf8Pwt1Brn-lIl"
-          title="Me Salva Sistemas Operacionais: Alocação Contígua com Múltiplas Partições"
+          caption="Me Salva Sistemas Operacionais: Alocação Contígua com Múltiplas Partições"
+          credit="Youtube - Canal: Prof. Santiago - Programação e Ciência"
         />
       </S.MediaContainer>
     </PostPage>

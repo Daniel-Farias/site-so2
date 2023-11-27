@@ -1,5 +1,6 @@
 import { PostPage } from '../../../components/PostPage';
 import { Image } from '../../../components/Image';
+import { Video } from '../../../components/Video';
 import Img4 from '../../../assets/images/memoria-virtual/4.png';
 import * as S from '../styles';
 
@@ -72,10 +73,15 @@ export function MemoriaVirtualPaginacao() {
 
       <S.Title>Videos:</S.Title>
       <S.MediaContainer>
-        <S.Video src="https://www.youtube.com/embed/0QxMvORmUFc?si=4sdGXnwlsKYJub4U" title="Paginação" />
-        <S.Video
+        <Video
+          src="https://www.youtube.com/embed/0QxMvORmUFc?si=4sdGXnwlsKYJub4U"
+          caption="Paginação"
+          credit="Youtube - Canal: Wédson Gomes"
+        />
+        <Video
           src="https://www.youtube.com/embed/4EaBN98dk40?si=pvOYa8-QQ0Ww_GNu"
-          title="Sistemas Operacionais - Aula 19 - Paginação"
+          caption="Sistemas Operacionais - Aula 19 - Paginação"
+          credit="Youtube - Canal: UNIVESP"
         />
       </S.MediaContainer>
     </PostPage>
